@@ -1,10 +1,17 @@
+# Importacao das bibliotecas
 import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
+
+# 1. Le a imagem
 img = cv.imread('../images/sudoku.jpg')
+
+# 2. Executa filtros laplaciano e sobel na direcao X e Y
 laplacian = cv.Laplacian(img,cv.CV_8U)
 sobelx = cv.Sobel(img,cv.CV_64F,1,0,ksize=5)
 sobely = cv.Sobel(img,cv.CV_64F,0,1,ksize=5)
+
+# 3. Plota as imagens em um unico grafico
 plt.subplot(2,2,1),plt.imshow(img,cmap = 'gray')
 plt.title('Original'), plt.xticks([]), plt.yticks([])
 plt.subplot(2,2,2),plt.imshow(laplacian,cmap = 'gray')

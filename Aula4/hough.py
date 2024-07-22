@@ -1,13 +1,16 @@
+# Importacao das bibliotecas
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
+# 1. Executa o algoritmo Canny
 img = cv2.imread('../images/sudoku.jpg')
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 edges = cv2.Canny(gray,50,150,apertureSize = 3)
 minLineLength = 0
 maxLineGap = 0
 
+# 2. Mostra as bordas detectas pelo filtro Canny
 cv2.imshow("Original", edges)
 cv2.waitKey(0)
 

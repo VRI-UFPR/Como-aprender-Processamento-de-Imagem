@@ -1,7 +1,9 @@
+#
 import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
+#
 img = cv2.imread('images/water_coins.jpg')
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 ret, thresh = cv2.threshold(gray,0,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
@@ -33,5 +35,6 @@ markers[unknown==255] = 0
 markers = cv2.watershed(img,markers)
 img[markers == -1] = [255,0,0]
 
+#
 cv2.imshow("Resultado", img)
 cv2.waitKey(0)
