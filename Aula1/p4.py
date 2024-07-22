@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 
 # 1. Le a imagem e converte para escala de cinza
-img = cv2.imread('images/wiki.jpg')
+img = cv2.imread('imagens/wiki.jpg')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # 2. Faz a equalizacao do histograma a partir da Imagem

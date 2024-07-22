@@ -4,7 +4,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # 1. Le a imagem e converte para escala de cinza
-img = cv2.imread('images/wiki.jpg',0)
+img = cv2.imread('imagens/wiki.jpg',0)
 cv2.imshow("Imagem original", img)
 cv2.waitKey(0)
 

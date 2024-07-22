@@ -2,7 +2,7 @@
 import cv2
 
 # 1. Ler a imagem com a funcao imread()
-imagem = cv2.imread('images/messi5_gray.jpg')
+imagem = cv2.imread('imagens/messi5_gray.jpg')
 
 # 2. Mostra alguns atributos
 print('Largura: ', imagem.shape[1])  # largura da imagem
@@ -28,3 +28,7 @@ cv2.imwrite("saida.jpg", imagem)
 #cv2.imshow("Imagem Gray", imagem)
 #cv2.waitKey(0)
 
+
+
+
+# ModuleNotFoundError: No module named 'matplotlib'

@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 
 # 1. Le a imagem
-image = cv2.imread('images/messi5.jpg')
+image = cv2.imread('imagens/messi5.jpg')
 
 # 2. Corta um pedaco da imagem
 (b, g, r) = image[10, 10]

@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 import cv2
 
 # 1. Lee a imagem
-img = cv2.imread('images/messi5.jpg')
+img = cv2.imread('imagens/messi5.jpg')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)   #converte P&B
 
 # 2. Mostra a imagem
@@ -22,4 +22,6 @@ plt.plot(h)
 plt.xlim([0, 256])
 # plt.hist(img.ravel(),256,[0,256])
 plt.show()
+
+# 5. Mostra a imagem e espera uma tecla
 cv2.waitKey(0)
