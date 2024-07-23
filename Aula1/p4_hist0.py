@@ -2,11 +2,13 @@
 from matplotlib import pyplot as plt
 import cv2
 
-# 1. Lee a imagem
-img = cv2.imread('imagens/messi5.jpg')
+# 1. Le a imagem
+imagem = cv2.imread('imagens/messi5.jpg')
+
+# 2. Converte  a imagem de BGR para Escala de Cinza
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)   #converte P&B
 
-# 2. Mostra a imagem
+
 cv2.imshow("Imagem P&B", img)
 cv2.waitKey(0)
 

@@ -3,18 +3,30 @@ import cv2
 import numpy as np
 
 # 1. Leitura da Imagem
-img = cv2.imread('messi5.jpg')
+img = cv2.imread('imagens/messi5.jpg')
 (canalAzul, canalVerde, canalVermelho) = cv2.split(img)
 
-#
+# 2. Cria uma imagem zerada de mesmo tamanho 
 zeros = np.zeros(img.shape[:2], dtype = "uint8")
-cv2.imshow("Vermelho", cv2.merge([zeros, zeros,
-canalVermelho]))
 
-# Mostra as imagens
-cv2.imshow("Verde", cv2.merge([zeros, canalVerde, zeros]))
-cv2.imshow("Azul", cv2.merge([canalAzul, zeros, zeros]))
-cv2.imshow("Original", img)
+# 3. Cria uma imagem BGR com apenas os valores de vermelho
+bgr_vermelho = cv2.merge([zeros, zeros, canalVermelho])
+cv2.imshow("Vermelho", bgr_vermelho)
+cv2.waitKey(0)
 
-# 5. Espera o usuario apertar uma tecla
+# 4. Cria uma imagem BGR com apenas os valores de verde
+bgr_verde = cv2.merge([zeros, canalVerde, zeros])
+cv2.imshow("Verde", bgr_verde)
+cv2.waitKey(0)
+
+# 5. Cria uma imagem BGR com apenas os valores de azul
+bgr_azul = cv2.merge([canalAzul, zeros, zeros])
+cv2.imshow("Azul", bgr_azul)
+cv2.waitKey(0)
+
+# 6. Mostra a imagem original juntando todos os canais de cores
+bgr_original = cv2.merge([canalAzul, canalVerde, canalVermelho])
+cv2.imshow("Original", bgr_original)
+
+# 7. Espera o usuario apertar uma tecla
 cv2.waitKey(0)

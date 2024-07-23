@@ -92,7 +92,7 @@ print(f'  Canais: {canais}')
 - Leitura de imagem
 - Mostrar e salvar uma imagem
 - Cortar uma parte da imagem
-- Converter uma imagem para diferentes representações (Escala Cinza, HUE, BGR)
+- Conversao uma imagem para diferentes representações (Escala Cinza, HUE, BGR)
 - Calcula o histograma original e equalizado de uma imagem
 - Plotar o histograma
 
@@ -102,3 +102,19 @@ Point operators
 - Compositing and matting
 - Histogram equalization
 - Application: Tonal adjustment
+
+
+## Possíveis Problemas
+
+ModuleNotFoundError: No module named 'cv2' -> opencv não instalado
+
+```bash
+pip3 install opencv-python
+```
+
+ModuleNotFoundError: No module named 'matplotlib' -> Matplotlib não instalado
+
+```bash
+pip3 install matplotlib
+```
+
