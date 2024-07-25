@@ -2,7 +2,6 @@
 Como Aprender Processamento de Imagem
 Copyright (C) 2024
   Lucas Ferrari
-  Rayson Laroca
   Felipe Bombardelli
 
 This program is free software: you can redistribute it and/or modify
@@ -19,19 +18,23 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
-# Aula 1
+# Aula 2 - 
 
-## Possíveis Problemas
+Pegar umas 5 a 10 imagens com ruido sal e pimenta
+Pegar umas 5 a 10 imagens com ruido 
+Pegar umas 5 a 10 imagens com ruido frequencia
 
-ModuleNotFoundError: No module named 'cv2' -> opencv não instalado
 
-```bash
-pip3 install opencv-python
-```
+Linear filtering
+- Separable filtering
+- Examples of linear filtering
+- Band-pass and steerable filters
 
-ModuleNotFoundError: No module named 'matplotlib' -> Matplotlib não instalado
+More neighborhood operators
+- Non-linear filtering
+- Bilateral filtering
+- Binary image processing
 
-```bash
-pip3 install matplotlib
-```
-
+Fourier transforms
+- Two-dimensional Fourier transforms
+- Application: Sharpening, blur, and noise removal

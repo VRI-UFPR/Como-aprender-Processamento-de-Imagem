@@ -2,7 +2,6 @@
 Como Aprender Processamento de Imagem
 Copyright (C) 2024
   Lucas Ferrari
-  Rayson Laroca
   Felipe Bombardelli
 
 This program is free software: you can redistribute it and/or modify
@@ -19,19 +18,11 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
-# Aula 1
+# Aula 5 - Filtros Locais
 
-## Possíveis Problemas
+## Filtros passa-baixa
 
-ModuleNotFoundError: No module named 'cv2' -> opencv não instalado
 
-```bash
-pip3 install opencv-python
-```
 
-ModuleNotFoundError: No module named 'matplotlib' -> Matplotlib não instalado
 
-```bash
-pip3 install matplotlib
-```
-
+## Filtros passa-alta
