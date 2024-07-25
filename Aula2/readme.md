@@ -18,23 +18,5 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 ```
 
-# Aula 2 - 
+# Aula 2 
 
-Pegar umas 5 a 10 imagens com ruido sal e pimenta
-Pegar umas 5 a 10 imagens com ruido 
-Pegar umas 5 a 10 imagens com ruido frequencia
-
-
-Linear filtering
-- Separable filtering
-- Examples of linear filtering
-- Band-pass and steerable filters
-
-More neighborhood operators
-- Non-linear filtering
-- Bilateral filtering
-- Binary image processing
-
-Fourier transforms
-- Two-dimensional Fourier transforms
-- Application: Sharpening, blur, and noise removal
